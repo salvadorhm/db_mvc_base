@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package main;
+import models.ModelAgenda;
+import views.ViewAgenda;
+import controllers.ControllerAgenda;
 
 /**
  *
@@ -15,7 +18,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ModelAgenda modelAgenda = new ModelAgenda();
+        ViewAgenda viewAgenda = new ViewAgenda();
+        ControllerAgenda controllerAgenda = new ControllerAgenda(modelAgenda, viewAgenda);
     }
     
 }
