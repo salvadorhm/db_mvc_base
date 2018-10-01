@@ -33,12 +33,24 @@ public class ViewAgenda extends javax.swing.JFrame {
         jl_email = new javax.swing.JLabel();
         jtf_nombre = new javax.swing.JTextField();
         jtf_email = new javax.swing.JTextField();
+        jbtn_primero = new javax.swing.JButton();
+        jbtn_anterior = new javax.swing.JButton();
+        jbtn_siguiente = new javax.swing.JButton();
+        jbtn_ultimo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jl_nombre.setText("Nombre");
 
         jl_email.setText("Email");
+
+        jbtn_primero.setText("|<");
+
+        jbtn_anterior.setText("<<");
+
+        jbtn_siguiente.setText(">>");
+
+        jbtn_ultimo.setText(">|");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -47,12 +59,22 @@ public class ViewAgenda extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jl_nombre)
-                    .addComponent(jl_email))
-                .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jtf_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jbtn_primero)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_anterior)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jbtn_siguiente)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jbtn_ultimo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jl_nombre)
+                            .addComponent(jl_email))
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jtf_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(101, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -66,7 +88,13 @@ public class ViewAgenda extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_email)
                     .addComponent(jtf_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(230, Short.MAX_VALUE))
+                .addGap(38, 38, 38)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbtn_primero)
+                    .addComponent(jbtn_anterior)
+                    .addComponent(jbtn_siguiente)
+                    .addComponent(jbtn_ultimo))
+                .addContainerGap(167, Short.MAX_VALUE))
         );
 
         pack();
@@ -108,6 +136,10 @@ public class ViewAgenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton jbtn_anterior;
+    public javax.swing.JButton jbtn_primero;
+    public javax.swing.JButton jbtn_siguiente;
+    public javax.swing.JButton jbtn_ultimo;
     public javax.swing.JLabel jl_email;
     public javax.swing.JLabel jl_nombre;
     public javax.swing.JTextField jtf_email;
