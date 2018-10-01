@@ -41,6 +41,13 @@ public class ModelAgenda {
         this.email = email;
     }
 
+    /**
+     * Método que realiza las siguietnes acciones:
+     * 1.- Conecta con la base agenda_mvc.
+     * 2.- Consulta todo los registros de la tabla contactos.
+     * 3.- Obtiene el nombre y el email y los guarda en las variables globales
+     * nombre y email.
+     */
     public void conectarDB() {
         try {
             conexion = DriverManager.getConnection("jdbc:mysql://localhost:3309/agenda_mvc", "user_mvc", "pass_mvc.2018");
@@ -54,5 +61,4 @@ public class ModelAgenda {
         }
 
     }
-
 }
