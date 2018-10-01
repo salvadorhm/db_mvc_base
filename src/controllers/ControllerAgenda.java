@@ -51,8 +51,18 @@ public class ControllerAgenda {
         this.viewAgenda = viewAgenda;
         initComponents();
         setActionListener();
+        initDB();
     }
 
+    /**
+     * Método que llama al método conectarBD del modelo y muestra el nombre y
+     * email del primer registro en las cajas de texto de ViewAgenda.
+     */
+    public void initDB(){
+        modelAgenda.conectarDB();
+        viewAgenda.jtf_nombre.setText(modelAgenda.getNombre());
+        viewAgenda.jtf_email.setText(modelAgenda.getEmail());
+    }
     /**
      * Metodo para inicializar la ViewAgenda
      */
