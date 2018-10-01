@@ -87,6 +87,9 @@ public class ControllerAgenda {
      */
     private void jbtn_primero_actionPerformed() {
         System.out.println("Action del boton jbtn_primero");
+        //invocar al metodo moverPrimerRegistro
+        //mostrar nombre en la vista
+        //mostar email en la vista
     }
 
     /**
@@ -94,6 +97,9 @@ public class ControllerAgenda {
      */
     private void jbtn_anterior_actionPerformed() {
         System.out.println("Action del boton jbtn_anterior");
+        //invocar al metodo moverAnteriorRegistro
+        //mostrar nombre en la vista
+        //mostar email en la vista
     }
 
     /**
@@ -101,6 +107,9 @@ public class ControllerAgenda {
      */
     private void jbtn_ultimo_actionPerformed() {
         System.out.println("Action del boton jbtn_ultimo");
+        //invocar al metodo moverUltimoRegistro
+        //mostrar nombre en la vista
+        //mostar email en la vista
     }
 
     /**
@@ -108,5 +117,8 @@ public class ControllerAgenda {
      */
     private void jbtn_siguiente_actionPerformed() {
         System.out.println("Action del boton jbtn_siguiente");
+        //invocar al metodo moverSiguienteRegistro
+        //mostrar nombre en la vista
+        //mostar email en la vista
     }
 }
