@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Zeo
+ * @author Salvador Hernandez Mendoza
  */
 public class ModelAgenda {
 

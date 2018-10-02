@@ -12,7 +12,7 @@ import views.ViewAgenda;
 
 /**
  *
- * @author Zeo
+ * @author Salvador Hernandez Mendoza
  */
 public class ControllerAgenda {
 

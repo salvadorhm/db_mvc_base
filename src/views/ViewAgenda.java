@@ -9,7 +9,7 @@ package views;
 
 /**
  *
- * @author Zeo
+ * @author Salvador Hernandez Mendoza
  */
 public class ViewAgenda extends javax.swing.JFrame {
 
